@@ -3,19 +3,19 @@ CREATE DATABASE Grimm_Wesens;  -- Created a database for wesens in the show Grim
 USE grimm_wesens; -- To make sure that I am using the grimm_wesens database.
 
 CREATE TABLE wesens  -- To create a table of all the wesens mentioned or seen in Grimm.
-(id int primary key AUTO_INCREMENT, wesen_species varchar(100) NOT NULL, wesen_description varchar(100), pronunciation varchar(100));
+(id int primary key, wesen_species varchar(100) NOT NULL, wesen_description varchar(100), pronunciation varchar(100));
 
 insert into wesens (id,wesen_species,wesen_description,pronunciation) values
 (1,"Alpe","Nightmare Creature","ALP (In German: Alp 'nightmare')"),
-(2,"Anubis","Jackal-like creature","uh-NOO-biss (In Latin: Anūbis 'Anubis, Egyptian God of the cemetery'"),
-(3,"Apgadnieks","Husky-like creature","uhp-GĀD-nee-eks (In Latvian: 'wage earner, breadwinner, supporter'"),
+(2,"Anubis","Jackal-like creature","uh-NOO-biss (In Latin: Anūbis 'Anubis, Egyptian God of the cemetery')"),
+(3,"Apgadnieks","Husky-like creature","uhp-GĀD-nee-eks (In Latvian: 'wage earner, breadwinner, supporter')"),
 (4,"Aswang","Ghoul-like creature","ah-SWAH-ng (In Tagalog: 'monster')"),
 (5,"Ataktos Fuse","Cicada-like creature","uh-TAHK-tohs FOO-see (In Greek: 'mischievous nature')"),
 (6,"Balam","Jaguar-like creature","ɓaa-LAAM (In Yucatec: 'jaguar')"),
 (7,"Barbatus Ossifrage","Bearded vulture-like creature","bahr-BAH-tis oh-suh-FRAH-guh (In Latin: barbatus 'bearded' + os, ossis 'bone' + -fragus 'breaker')"),
 (8,"Bauerschwein","Pig-like creature","BOW-ur-shvine (In German: Bauer 'farmer' + Schwein 'pig')"),
 (9,"Blutbad","Wolf-like creature","BLOOT-baat (In German: Blut 'blood' + Bad 'bath')"),
-(10,"Coyotl", "Coyote-like creature", "koh-YOO-tuhl (In Nahuatl: 'coyote')" ),
+(10,"Coyotl", "Coyote-like creature", "koh-YOO-tuhl (In Nahuatl: 'coyote')"),
 (11,"Cracher-Mortel","Puffer fish-like creature", "CRA-shay mor-TEL (In French: Cracher 'to spit' + Mortel 'deadly' or 'mortal')"),
 (12,"Cupiditas","Cupid-like creature","kyoo-PID-ee-tahs (In Latin: cupido + -tās 'desire, longing, lust')"),
 (13,"Dämonfeuer","Dragon-like creature","DAY-mon-foy-ər (In German: Dämon 'demon' + Feuer 'fire')"),
@@ -43,7 +43,7 @@ insert into wesens (id,wesen_species,wesen_description,pronunciation) values
 (35,"Zauberbiest","Warlock-like creature","TSOW-bər-beest (In German: Zauber 'magic' or Zauberer 'wizard' + Biest 'beast')"),
 (36,"Höllentier","Hellhound-like creature","HØ-lehn-teer (In German: Hölle 'hell' + Tier 'animal')"),
 (37,"Hundjäger","Hound dog-like creature","HOOND-yay-gər (In German: Hund 'dog' + Jäger 'hunter')"),
-(38,"Huntha Lami Muuaji","Flatworm-like creature","HOONT-uh LAH-mee moo-AH-zhi (In Swahili: 'hermaphrodite' + 'tar' + 'murderer')" ),
+(38,"Huntha Lami Muuaji","Flatworm-like creature","HOONT-uh LAH-mee moo-AH-zhi (In Swahili: 'hermaphrodite' + 'tar' + 'murderer')"),
 (39,"Indole Gentile","Sweet, doe-faced creature","EEN-doh-lay jen-TEE-lay (In Italian: 'nature' + 'kind')"),
 (40,"Inugami","Ghost dog-like creature","ee-noo-GAH-mee (In Japanese: 犬神 'dog god')"),
 (41,"Jägerbar","Bear-like creature","YAY-gər-bar (In German: Jäger 'hunter' + Bär 'bear')"),
@@ -104,11 +104,11 @@ insert into wesens (id,wesen_species,wesen_description,pronunciation) values
 (96,"Willahara","Rabbit-like creature","vil-uh-HAHR-uh (In Old English: willa 'pleasure' + hara 'hare')"),
 (97,"Yaguareté","Jaguar-like creature","YAH-gwar-et-aye (In Spanish: Yaguareté 'jaguar')"),
 (98,"Ziegevolk","Goat-like creature","TSEE-guh-folk (In German: Ziege 'goat' + Volk 'people')"),
-(99,"Riesen-Ratte",NULL,"⟨ʀ⟩EE-zuhn-⟨ʀ⟩ah-tuh (In German: 'giant rat')" ),
+(99,"Riesen-Ratte",NULL,"⟨ʀ⟩EE-zuhn-⟨ʀ⟩ah-tuh (In German: 'giant rat')"),
 (100,"Zerstörer",NULL,"tsair-SHTOER-ehr (In German: 'destroyer')"),
 (101,"Abartige Aasfresser","Hyena-like creature","AHB-ar-tih-guh AHSS-freh-suhr (In German: abartig 'deviant' + Aasfresser 'scavenger')"),
 (102,"Abath","Unicorn-like creature","AH-bahth (In English: 'female unicorn')"),
-(103,"Ak-Moho_Alii","Ak-Moo-Alii","Shark-like creature","ahk-MOH-hoh-ah-LEE (In Māori: 'king of all sharks')"),
+(103,"Ak-Moo-Alii","Shark-like creature","ahk-MOH-hoh-ah-LEE (In Māori: 'king of all sharks')"),
 (104,"Amarok","Yeti-like creature","UHM-uh-rohk (In Inuit: 'wolf')"),
 (105,"Ammit","Chimera-like creature","AHM-mit (In Egyptian: 'devourer of the dead')"),
 (106,"Augapfel-Aushacken","Bird-like creature","OWK-ahp-fel-OWSS-hah-ken (In German: 'to peck out the eyeball')"),
@@ -139,7 +139,10 @@ insert into wesens (id,wesen_species,wesen_description,pronunciation) values
 (131,"Volkodlak","Wolf-like creature","FOE-kode-lahk (In Slovenian: 'wolf hair')"),
 (132,"Waage","Unknown","VAA-guh (In German: '[weighing] scales')"),
 (133,"Waschbar","Raccoon-like creature","VAASH-bar (In German: 'raccoon')"),
-(134,"Schmerzen-Kaninchen","Rabbit-like creature","SHMAYR-tsen kuh-NEEN-shin (In German: 'pain rabbit')")
+(134,"Schmerzen-Kaninchen","Rabbit-like creature","SHMAYR-tsen kuh-NEEN-shin (In German: 'pain rabbit')");
 
+      
+SELECT * FROM wesens; -- There was an issue with the table, so I used this to keep checking what rows were added.
 
+ALTER TABLE wesens modify column pronunciation varchar(200);  -- I had to modify the amount of characters allowed in the pronunciation column.
 
