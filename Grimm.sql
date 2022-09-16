@@ -149,7 +149,7 @@ ALTER TABLE wesens modify column pronunciation varchar(200);  -- I had to modify
 -- Creating the episodes table:
 
 CREATE TABLE episodes
-(wesen_id int, wesen_type varchar(60), season_num int, episode_num int, episode_title varchar(100), air_date DATE, foreign key (wesen_id) references wesens(id));
+(wesen_id int, wesen_type varchar(60), season_num int, season_episode_num int, series_episode_num int, episode_title varchar(100), air_date DATE, foreign key (wesen_id) references wesens(id));
 
 INSERT INTO episodes (wesen_id, wesen_type, season_num, season_episode_num, series_episode_num, episode_title, air_date) values
 (1,"Alpe",6,6,116,"Breakfast in Bed",'2017-02-10'),
@@ -232,7 +232,7 @@ INSERT INTO episodes (wesen_id, wesen_type, season_num, season_episode_num, seri
 (78,"Spinnetod",1,11,11,"Tarantella",'2012-02-10'),
 (79,"Stangebär",2,4,26,"Quill",'2012-09-03'),
 (80,"Steinadler",1,13,13,"Three Coins in a Fuchsbau",'2012-03-02'),
-(81,"Taureus-Armenta",2,18,40,"Volcanalis",'2013-26-04'),
+(81,"Taureus-Armenta",2,18,40,"Volcanalis",'2013-04-26'),
 (82,"Taweret",6,5,115,"The Seven Year Itch",'2017-02-03'),
 (83,"Uhranuti",5,11,99,"Key Move",'2016-03-04'),
 (84,"Ungeziefer Greifer",5,11,99,"Key Move",'2016-03-04'),
@@ -286,3 +286,4 @@ INSERT INTO episodes (wesen_id, wesen_type, season_num, season_episode_num, seri
 (132,"Waage",1,1,1,"Pilot",'2011-10-28'),
 (133,"Waschbar",1,10,10,"Organ Grinder",'2012-02-03'),
 (134,"Schmerzen-Kaninchen",2,22,44,"Goodnight, Sweet Grimm",'2013-05-21');
+
