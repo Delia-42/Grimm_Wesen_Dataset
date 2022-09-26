@@ -24,7 +24,7 @@ SELECT wesen_type, season_num
    FROM characteristics
   WHERE wesen_characteristics LIKE '%bull%' OR wesen_characteristics LIKE '%fox%';
  
--- Query for which month in each year had the most wesen introductions
+-- Query to find out which month in each year had the most wesen introductions
 WITH dates AS (SELECT wesen_id, MONTHNAME(air_date) AS time_of_year, EXTRACT(YEAR FROM air_date) AS YEAR, EXTRACT(MONTH FROM air_date) AS month
   FROM episodes
  ORDER BY air_date, season_num)
